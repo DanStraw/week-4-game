@@ -1,0 +1,49 @@
+body {
+    background-image: url('../images/diamonds.png')
+}
+
+header {
+    background-color: cyan;
+    height: 100px;
+    margin-top: 20px;
+    padding-top: 25px;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+.instructions {
+    background-color: rgb(235, 234, 178);
+    padding: 5px;
+    color: #266852;
+}
+
+.rand-number-box {
+    background-color: red;
+}
+
+.wins-losses {
+    background-color: greenyellow;
+}
+
+.score-box {
+    background-color: maroon;
+}
+
+#score-counter {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    border-top: 2px black dashed;
+    color: black;
+    
+}
+
+.crystals {
+ /*   background-color: #ffffff;*/
+}
+
+.btn {
+    background-color: rgba(204, 201, 201, 0.89);
+}
