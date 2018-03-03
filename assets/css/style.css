@@ -75,7 +75,7 @@ header {
     border: #92A8D1 3px ridge;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
     .rand-number-box, .wins-losses, .score-box {
         width: 33.333%;
         height: 120px;
@@ -89,9 +89,14 @@ header {
         text-align: center;
         padding-top: 3px;
     }
+    img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 530px) {
     h3, h4, #win-counter, #loss-counter, .rand-number-box, .wins-losses, .score-box {
         font-size: 18px;
     }
@@ -102,6 +107,9 @@ header {
     .wins-losses {
         padding-left: 20px;
         padding-top: 25px;
+    }
+    .crystal {
+        width: 50%;
     }
 
 }
