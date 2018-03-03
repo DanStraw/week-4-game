@@ -21,6 +21,12 @@ header {
     border: #92A8D1 3px ridge;
 }
 
+.hide-instructions, .show-instructions {
+    color: darkblue;
+    text-decoration: underline;
+    text-align: center;
+}
+
 .rand-number-box {
     background-color: #F7CAC9;
     border: #92A8D1 3px ridge;
@@ -31,7 +37,8 @@ header {
     width: 90%;
     left: 5%;
     border-top: 1px #92A8D1 inset;
-    color: black;    
+    color: black;
+    text-align: center; 
 }
 
 .wins-losses {
@@ -50,6 +57,7 @@ header {
     left: 5%;
     border-top: 1px #92A8D1 inset;
     color: black;    
+    text-align: center;
 }
 
 
@@ -65,4 +73,35 @@ header {
 .btn:disabled {
     background-color: rgba(204, 201, 201, 0.89);
     border: #92A8D1 3px ridge;
+}
+
+@media screen and (max-width: 768px) {
+    .rand-number-box, .wins-losses, .score-box {
+        width: 33.333%;
+        height: 120px;
+    }
+
+    .wins-losses {
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+    #random-number, #score-counter {
+        text-align: center;
+        padding-top: 3px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h3, h4, #win-counter, #loss-counter, .rand-number-box, .wins-losses, .score-box {
+        font-size: 18px;
+    }
+    #random-number, #score-counter {
+        padding-top: 14px;
+        
+    }
+    .wins-losses {
+        padding-left: 20px;
+        padding-top: 25px;
+    }
+
 }

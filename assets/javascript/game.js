@@ -7,7 +7,7 @@ $(document).ready(function() {
     var pinkValue;
     var purpleValue;
     var playerScore = 0;
-
+    $(".show-instructions").hide();
     //when new round starts, new random number between is selected, new values for the crystal is selected, and playerscore resets to 0
     function reset() {
         randNumber = Math.floor((Math.random() * 101) + 19);
@@ -81,5 +81,17 @@ $(document).ready(function() {
         $("#loss-counter").text(losses);
         playAgain();
     }
+
+    $('.hide-instructions').on('click', function() {
+        $('.instructions').hide();
+        $('.hide-instructions').hide();
+        $('.show-instructions').show();
+    });
+
+    $('.show-instructions').on('click', function() {
+        $('.instructions').show();
+        $('.hide-instructions').show();
+        $('.show-instructions').hide();
+    });
     //if playerScore exceeds randNumber, add 1 to loss, reset
 })
